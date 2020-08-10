@@ -1,0 +1,21 @@
+ 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite   name="TestNg Automation Suite">
+  <test   name="Differnet Testng Feature Test">
+    <classes>
+    
+     <class name="com.TestNG.DataProvider_Fb"/>
+       
+    
+    
+    
+    </classes>
+    
+    
+    
+    
+    
+  </test>  
+</suite>  
+            

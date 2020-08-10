@@ -1,0 +1,77 @@
+package com.Property;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class PropertyFile {
+	
+	public static void main(String[] args) throws IOException {
+		
+		WebDriver driver = null;
+		
+		//how to read property file
+		
+		Properties prop = new Properties();
+		FileInputStream file = new FileInputStream("C://Users//siva//Desktop//Venkat//com.Selenium//config.properties");
+		
+		prop.load(file);
+		
+		
+		System.out.println(prop.getProperty("browser"));
+		System.out.println(prop.getProperty("url"));
+		System.out.println(prop.getProperty("username"));
+		System.out.println(prop.getProperty("password"));
+		
+		
+		
+		
+		String browserName= prop.getProperty("browser");
+		
+		
+		
+		if(browserName.equals("chrome"))
+		{
+			  System.setProperty("webdriver.chrome.driver", "C://Users//siva//Desktop//Venkat//com.Selenium//driverFiles//chromedriver.exe");
+			      driver= new ChromeDriver();
+			     
+		}else if(browserName.equals("FF"))
+		{
+			driver = new FirefoxDriver();
+			
+		}
+		
+		
+		
+		driver.get(prop.getProperty("url"));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

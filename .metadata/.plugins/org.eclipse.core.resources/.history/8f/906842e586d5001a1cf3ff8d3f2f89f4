@@ -1,0 +1,24 @@
+ 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite   name="TestNg Automation Suite">
+  <test   name="Differnet Testng Feature Test">
+    <classes>
+    
+     <class name="com.TestNG.TestNGBasics"/>
+      <class name="com.TestNG.Testng_grouping"/>
+      <class name="com.TestNG.OrangeTest"/> 
+    
+    
+    
+    
+    
+    </classes>
+    
+    
+    
+    
+    
+  </test>  
+</suite>  
+            

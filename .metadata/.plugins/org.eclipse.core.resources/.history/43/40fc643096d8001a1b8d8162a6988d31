@@ -1,0 +1,73 @@
+package com.Log4j;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.log4testng.Logger;
+
+public class GenerateLogs {
+	 
+	public static void main(String[] args) {
+		
+		WebDriver driver = null;
+		
+           
+           
+		 Logger log	=	Logger.getLogger(GenerateLogs.class);
+
+ 
+          String URL ="https://www.google.com/";
+          
+          System.setProperty("webdriver.chrome.driver", "./driverFiles/chromedriver.exe");
+         driver= new ChromeDriver();
+          
+          
+          log.info("launching browser");
+          
+         
+  	    driver.manage().window().maximize();
+  	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+  	    driver.manage().deleteAllCookies();
+  	    driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+  	  driver.get(URL);
+	    
+  	    
+ 
+		
+		
+		
+		String title=driver.getTitle();
+		System.out.println("The Title is " + title);
+	
+		log.info("The Title is " + title);
+		
+		if(title.equals("Google"))
+		{
+			System.out.println("The Correct Title");
+			log.info("The Correct Title");
+		}
+		else
+		{
+			System.out.println("The Incorrect Title");
+			log.info("The Incorrect Title");
+			
+		}
+		
+		
+		
+		
+		
+		driver.quit();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

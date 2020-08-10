@@ -1,0 +1,110 @@
+package com.TestNG;
+
+import org.junit.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class TestNGBasics {
+	
+	
+	@BeforeSuite //1
+	public void SetUp()
+	{
+		System.out.println("SetUp System property for chrome");
+	}
+
+	@BeforeTest //2
+	public void launchBrowser()
+	{
+		System.out.println("Launch Browser");
+	}
+
+	
+	@BeforeClass //3
+	public void login()
+	{
+		System.out.println("Login into App");
+	}
+	
+	@BeforeMethod //4
+	public void enterURL()
+	{
+		System.out.println("Enter URL");
+	}
+	
+	@Test(priority=1)
+	public void GoogleTitleTest()
+	{
+		System.out.println("Google Title Test");
+	} 
+	
+	
+	@Test(priority=2) 
+	public void getText()
+	{
+		System.out.println("get text method");
+	}
+	
+	
+	@AfterMethod
+	public void logOut()
+	{
+		System.out.println("Logout from app");
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		System.out.println("Close the browser");
+	}
+	
+	@AfterClass
+	public void DeleteAllCookies()
+	{
+		System.out.println("delecte all Cookies");
+	}
+	
+	@AfterSuite
+	public void GenerateTestReports()
+	{
+		System.out.println("Generate Test Results");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+	
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.TestNG.ExceptionTimeOut"/>
+      <class name="com.TestNG.TestNg_Features"/>
+      <class name="com.TestNG.OrangeTest"/>
+      <class name="com.TestNG.DataProviderExample"/>
+      <class name="com.TestNG.Testng_grouping"/>
+      <class name="com.TestNG.TestNGBasics"/>
+      <class name="com.TestNG.DataProvider_Fb"/>
+      <class name="com.TestNG.DataProvider_register"/>
+      <class name="com.TestNG.InvocationCount"/>
+      <class name="com.TestNG.DataProviderExample2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
