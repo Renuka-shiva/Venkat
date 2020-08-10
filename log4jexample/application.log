@@ -1,0 +1,7 @@
+2020-08-10 14:33:07,791  INFO [main] HtmlLayoutEx:16 - Hello world
+2020-08-10 14:33:07,796  INFO [main] HtmlLayoutEx:17 - we are in logger info mode
+2020-08-10 14:33:07,796 DEBUG [main] HtmlLayoutEx:19 - Debug Message!
+2020-08-10 14:33:07,796  INFO [main] HtmlLayoutEx:20 - Info Message!
+2020-08-10 14:33:07,796  WARN [main] HtmlLayoutEx:21 - Warn Message!
+2020-08-10 14:33:07,796 ERROR [main] HtmlLayoutEx:22 - Error Message!
+2020-08-10 14:33:07,796 FATAL [main] HtmlLayoutEx:23 - Fatal Message!
