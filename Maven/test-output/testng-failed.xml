@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Log4j.LoginTest">
+      <class name="HomePageTest">
         <methods>
-          <include name="GoogleTitle"/>
+          <include name="validatinghomepageTitle"/>
           <include name="SetUp"/>
-          <include name="TearDown"/>
+          <include name="tearDown"/>
+          <include name="setUpSuite"/>
         </methods>
-      </class> <!-- com.Log4j.LoginTest -->
+      </class> <!-- HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
